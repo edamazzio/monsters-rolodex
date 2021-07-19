@@ -1,5 +1,11 @@
 import React from 'react';
-import {Card} from "../card/card.component";
-import './card-list.styles.css'
+import './search-box.styles.css'
 
-export const SearchComponent = (props) => (
+export const SearchBox = ({ placeholder, changeHandler }) => (
+    <input
+        className='search'
+        type='search'
+        placeholder={placeholder}
+        onChange={changeHandler}
+    />
+)
